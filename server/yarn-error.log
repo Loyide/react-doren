@@ -1,20 +1,17 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add koa-body
+  C:\Program Files\nodejs\node.exe C:\Users\ktygo\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js start:dev
 
 PATH: 
-  /home/loyid/bin:/home/loyid/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+  C:\Users\ktygo\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\ktygo\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\MongoDB\Server\3.6\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Redis;C:\Users\ktygo\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip;C:\Users\ktygo\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.6\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
 
 Yarn version: 
-  1.6.0
+  1.5.1
 
 Node version: 
-  8.11.1
+  8.9.4
 
 Platform: 
-  linux x64
-
-Trace: 
-  Error: EACCES: permission denied, unlink '/home/loyid/바탕화면/Doren/server/node_modules/.bin/acorn'
+  win32 x64
 
 npm manifest: 
   {
@@ -30,11 +27,13 @@ npm manifest:
       "joi": "^13.1.2",
       "jsonwebtoken": "^8.2.0",
       "koa": "^2.5.0",
+      "koa-body": "^2.5.0",
       "koa-bodyparser": "^4.2.0",
       "koa-router": "^7.4.0",
       "koa-websocket": "^4.1.0",
       "moment": "^2.22.1",
       "mongoose": "^5.0.12",
+      "mongoose-auto-increment": "^5.0.1",
       "redis": "^2.8.0"
     },
     "devDependencies": {
@@ -477,7 +476,7 @@ Lockfile:
     version "2.2.0"
     resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
   
-  co-body@^5.1.0:
+  co-body@^5.1.0, co-body@^5.1.1:
     version "5.1.1"
     resolved "https://registry.yarnpkg.com/co-body/-/co-body-5.1.1.tgz#d97781d1e3344ba4a820fd1806bddf8341505236"
     dependencies:
@@ -951,7 +950,7 @@ Lockfile:
       assign-symbols "^1.0.0"
       is-extendable "^1.0.1"
   
-  extend@~3.0.0:
+  extend@^3.0.0, extend@~3.0.0:
     version "3.0.1"
     resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.1.tgz#a755ea7bc1adfcc5a31ce7e762dbaadc5e636444"
   
@@ -1059,6 +1058,10 @@ Lockfile:
       asynckit "^0.4.0"
       combined-stream "^1.0.5"
       mime-types "^2.1.12"
+  
+  formidable@^1.1.1:
+    version "1.2.1"
+    resolved "https://registry.yarnpkg.com/formidable/-/formidable-1.2.1.tgz#70fb7ca0290ee6ff961090415f4b3df3d2082659"
   
   fragment-cache@^0.2.1:
     version "0.2.1"
@@ -1706,6 +1709,13 @@ Lockfile:
     version "6.0.2"
     resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   
+  koa-body@^2.5.0:
+    version "2.5.0"
+    resolved "https://registry.yarnpkg.com/koa-body/-/koa-body-2.5.0.tgz#84e8fcd8d5229a8cc1cb98a926e939069e716915"
+    dependencies:
+      co-body "^5.1.1"
+      formidable "^1.1.1"
+  
   koa-bodyparser@^4.2.0:
     version "4.2.0"
     resolved "https://registry.yarnpkg.com/koa-bodyparser/-/koa-bodyparser-4.2.0.tgz#bce6e08bc65f8709b6d1faa9411c7f0d8938aa54"
@@ -1962,6 +1972,12 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.0.4.tgz#ee0c0f7bc565edc5f40ee2d23170e522a8ad2286"
     dependencies:
       mongodb-core "3.0.4"
+  
+  mongoose-auto-increment@^5.0.1:
+    version "5.0.1"
+    resolved "https://registry.yarnpkg.com/mongoose-auto-increment/-/mongoose-auto-increment-5.0.1.tgz#827e051d9cc371dabe8bff1a704431d341cb79df"
+    dependencies:
+      extend "^3.0.0"
   
   mongoose-legacy-pluralize@1.0.2:
     version "1.0.2"
@@ -3160,3 +3176,19 @@ Lockfile:
   yallist@^2.1.2:
     version "2.1.2"
     resolved "https://registry.yarnpkg.com/yallist/-/yallist-2.1.2.tgz#1c11f9218f076089a47dd512f93c6699a6a81d52"
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: C:\WINDOWS\system32\cmd.exe
+  Arguments: /d /s /c NODE_PATH=src nodemon --watch src/ src/index.js
+  Directory: C:\Users\ktygo\Desktop\react-doren\server
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Users\ktygo\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Users\ktygo\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Users\ktygo\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)

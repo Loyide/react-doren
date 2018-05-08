@@ -2,7 +2,7 @@
 
 .post-list {
   background: white;
-  @include material-shadow(0.5, 1);
+  @include material-shadow(1, 1);
 
   .list-top{
     width: 100%;
